@@ -46,5 +46,5 @@ if ingredients_list :
 import requests
 url = "https://my.smoothiefroot.com/api/fruit/watermelon"
 smoothiefroot_response = requests.get(url)
-st.text(smoothiefroot_response.text)   # o st.write(...)
+st.text(smoothiefroot_response.json())   # o st.write(...)
 
